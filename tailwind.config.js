@@ -7,7 +7,7 @@ module.exports = {
     extend: {
       colors: {
         chatGpt: "#73AA9B",
-        netflix: "#E50914",
+        netflix: "#564d4d",
         facebook: "#3C5A9A",
         vectormind: "#574CFF",
         youtube: "#E50914"
