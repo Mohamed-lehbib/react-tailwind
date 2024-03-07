@@ -1,6 +1,6 @@
 # This React Tailwind Test
 
-I had a Task to simulate these interfaces using react and tailwind css
+I had a Task to simulate these interfaces using **React** and **Tailwind CSS**.
 
 ## First Test
 
