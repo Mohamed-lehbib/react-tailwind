@@ -3,7 +3,7 @@ import CardComponent from "./CardComponent";
 
 export default function Netflix() {
   return (
-    <div className="text-white text-6xl flex flex-col items-center justify-center">
+    <div className="text-white sm:text-6xl text-3xl flex flex-col items-center justify-center">
       <p className="font-raleway font-bold mb-20 text-center">Where to go ?</p>
       <div className="flex flex-wrap justify-center gap-4 sm:gap-6 md:gap-7 lg:gap-8 xl:gap-6">
         <CardComponent imageUrl="images/facebook-black.svg">
