@@ -1,13 +1,15 @@
 import React from "react";
 import logo from "./logo.svg";
-import "./App.css";
 import Netflix from "./components/Netflix";
+import { Route, Routes } from "react-router-dom";
+import YoutubePage from "./components/YoutubePage";
 
 function App() {
   return (
-    <div className="bg-black min-h-screen flex justify-center items-center">
-      <Netflix />
-    </div>
+    <Routes>
+      <Route path="/" element={<Netflix />} />
+      <Route path="/youtube" element={<YoutubePage />} />
+    </Routes>
   );
 }
 

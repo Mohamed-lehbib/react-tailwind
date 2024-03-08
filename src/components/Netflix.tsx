@@ -1,8 +1,11 @@
 import React from "react";
 import CardComponent from "./CardComponent";
+import { useNavigate } from "react-router-dom";
 
 export default function Netflix() {
+  const navigate = useNavigate();
   return (
+    <div className="bg-black min-h-screen flex justify-center items-center">
     <div className="text-white sm:text-6xl text-3xl flex flex-col items-center justify-center">
       <p className="font-raleway font-bold mb-20 text-center">Where to go ?</p>
       <div className="flex flex-wrap justify-center gap-4 lg:gap-6 ">
@@ -31,6 +34,7 @@ export default function Netflix() {
           imageUrl="images/youtube-black.svg"
           hoverImageUrl="images/youtube-white.svg"
           hoverColor="group-hover:bg-youtube"
+          onClick={() => navigate("/youtube")}
         >
           youtube
         </CardComponent>
@@ -42,6 +46,7 @@ export default function Netflix() {
           vector mind
         </CardComponent>
       </div>
+    </div>
     </div>
   );
 }
