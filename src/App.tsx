@@ -1,8 +1,8 @@
 import React from "react";
 import logo from "./logo.svg";
-import Netflix from "./components/Netflix";
+import Netflix from "./pages/Netflix";
 import { Route, Routes } from "react-router-dom";
-import YoutubePage from "./components/YoutubePage";
+import YoutubePage from "./pages/YoutubePage";
 
 function App() {
   return (
