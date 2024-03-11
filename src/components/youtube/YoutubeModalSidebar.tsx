@@ -5,8 +5,8 @@ import { SiYoutubeshorts } from "react-icons/si";
 
 export default function YouTubeModalSidebar() {
   return (
-    <div className="lg:hidden fixed left-0 top-16 h-full bg-black py-4 pl-1 px-5">
-      <div className="ml-3 flex flex-col items-start py-4">
+    <div className="lg:hidden fixed left-0 top-16 h-full bg-black py-4 pl-1 px-6">
+      <div className="ml-4 flex flex-col items-start py-4">
         <SidebarLink icon={<AiFillHome size={32} />} text="Accueil" />
         <SidebarLink icon={<SiYoutubeshorts size={32} />} text="Shorts" />
         <SidebarLink icon={<MdSubscriptions size={32} />} text="Abonnements" />
