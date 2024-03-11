@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { AiFillHome } from "react-icons/ai";
 import { MdSubscriptions, MdVideoLibrary } from "react-icons/md";
@@ -7,11 +7,15 @@ import YouTubeModalSidebar from "./YoutubeModalSidebar";
 
 interface navProps {
   icon: string;
+  sidebarOpen: boolean;
+  setSidebarOpen: (open: boolean) => void;
 }
 
-export default function YouTubeNavbar({ icon }: navProps) {
-  const [sidebarOpen, setSidebarOpen] = useState(false);
-
+export default function YouTubeNavbar({
+  icon,
+  sidebarOpen,
+  setSidebarOpen,
+}: navProps) {
   const toggleSidebar = () => {
     setSidebarOpen(!sidebarOpen);
   };
