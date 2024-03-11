@@ -5,7 +5,8 @@ import YoutubeSideBar from "../components/youtube/YoutubeSideBar";
 import VideoCard from "../components/youtube/VideoCard";
 
 export default function YoutubePage() {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
+
   return (
     <div className="bg-black min-h-screen relative">
       <YouTubeNavbar icon="images/youtube-svgrepo-com.svg" />
