@@ -6,11 +6,11 @@ import { SiYoutubeshorts } from "react-icons/si";
 export default function YouTubeModalSidebar() {
   return (
     <div className="lg:hidden fixed left-0 top-16 h-full bg-black py-4 pl-1 ml-3 px-5">
-      <div className="flex flex-col items-start">
-        <SidebarLink icon={<AiFillHome size={30} />} text="Accueil" />
-        <SidebarLink icon={<SiYoutubeshorts size={30} />} text="Shorts" />
-        <SidebarLink icon={<MdSubscriptions size={30} />} text="Abonnements" />
-        <SidebarLink icon={<MdVideoLibrary size={30} />} text="Vous" />
+      <div className="flex flex-col items-start py-4">
+        <SidebarLink icon={<AiFillHome size={32} />} text="Accueil" />
+        <SidebarLink icon={<SiYoutubeshorts size={32} />} text="Shorts" />
+        <SidebarLink icon={<MdSubscriptions size={32} />} text="Abonnements" />
+        <SidebarLink icon={<MdVideoLibrary size={32} />} text="Vous" />
       </div>
     </div>
   );
@@ -24,8 +24,8 @@ interface sidebarLinkProps {
 function SidebarLink({ icon, text }: sidebarLinkProps) {
   return (
     <div className="mb-6 flex items-center group">
-      <div className="text-white text-2xl">{icon}</div>
-      <span className="text-white text-xs pl-1 group-hover:text-gray-400">
+      <div className="text-white text-2xl mr-2">{icon}</div>
+      <span className="text-white text-s pl-1 group-hover:text-gray-400">
         {text}
       </span>
     </div>
